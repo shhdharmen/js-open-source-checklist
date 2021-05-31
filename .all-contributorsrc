@@ -1,0 +1,24 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "shhdharmen",
+      "name": "Dharmen Shah",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6831283?v=4",
+      "profile": "http://shhdharmen.me",
+      "contributions": [
+        "content"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "js-open-source-checklist",
+  "projectOwner": "shhdharmen",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true
+}
