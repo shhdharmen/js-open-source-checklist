@@ -118,7 +118,7 @@ A few tooling and other checks needed for your Open-Source JavaScript Project:
         [
           "@semantic-release/github",
           {
-            "assets": ["dist/*.tgz"]
+            "assets": ["dist"]
           }
         ],
         "@semantic-release/git"
