@@ -59,22 +59,38 @@ A few tooling and other checks needed for your Open-Source JavaScript Project:
     npx mrm lint-staged
     ```
 8. [Stylelint](https://stylelint.io/)
-    ```bash
-    npm install --save-dev stylelint stylelint-config-standard stylelint-prettier
-    ```
-    ```bash
-    echo "{\"extends\":\"stylelint-config-standard\",\"plugins\":[\"stylelint-prettier\"],\"rules\":{\"prettier/prettier\":true}}" > .stylelintrc.json
-    ```
-    
-    Add scripts in `lint-staged` section in `package.json`:
-    ```json
-    "lint-staged": {
-        "*.ts": "eslint --cache --fix",
-        "*.{ts,js,css,md,json}": "prettier --write",
-        "*.css": "stylelint",
-        "*.scss": "stylelint --syntax=scss"
-    }
-    ```
+    - CSS
+        ```bash
+        npm install --save-dev stylelint stylelint-config-standard stylelint-prettier
+        ```
+        ```bash
+        echo "{\"extends\":\"stylelint-config-standard\",\"plugins\":[\"stylelint-prettier\"],\"rules\":{\"prettier/prettier\":true}}" > .stylelintrc.json
+        ```
+
+        Add scripts in `lint-staged` section in `package.json`:
+        ```json
+        "lint-staged": {
+            "*.ts": "eslint --cache --fix",
+            "*.{ts,js,css,md,json}": "prettier --write",
+            "*.css": "stylelint",
+        }
+        ```
+    - SASS
+        ```bash
+        npm install --save-dev stylelint stylelint-config-sass-guidelines stylelint-prettier
+        ```
+        ```bash
+        echo "{\"extends\":\"stylelint-config-sass-guidelines\",\"plugins\":[\"stylelint-prettier\"],\"rules\":{\"prettier/prettier\":true}}" > .stylelintrc.json
+        ```
+
+        Add scripts in `lint-staged` section in `package.json`:
+        ```json
+        "lint-staged": {
+            "*.ts": "eslint --cache --fix",
+            "*.{ts,js,css,md,json}": "prettier --write",
+            "*.scss": "stylelint --syntax=scss"
+        }
+        ```
 
 ## Contributors ✨
 
