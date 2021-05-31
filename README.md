@@ -40,7 +40,21 @@ A few tooling and other checks needed for your Open-Source JavaScript Project:
     ```bash
     npx husky add .husky/commit-msg 'npx --no-install commitlint --edit $1'
     ```
-6. [Lint Staged](https://github.com/okonet/lint-staged#readme)
+6. [Commitizen CLI](http://commitizen.github.io/cz-cli/)
+    ```bash
+    npm install -g commitizen
+    ```
+    ```bash
+    commitizen init cz-conventional-changelog --save-dev --save-exact
+    ```
+    
+    Add `commit` script in `package.json`:
+    ```json
+    "scripts": {
+        "commit": "cz"
+    }
+    ```
+7. [Lint Staged](https://github.com/okonet/lint-staged#readme)
     ```bash
     npx mrm lint-staged
     ```
