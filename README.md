@@ -1,5 +1,7 @@
 # Open Source Checklist for JavaScript Project
 
+A few tooling and other checks needed for your Open-Source JavaScript Project:
+
 1. [Pre-launch checklist](https://opensource.guide/starting-a-project/#your-pre-launch-checklist)
 2. [ESLint](https://eslint.org/)
     ```bash
