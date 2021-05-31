@@ -125,6 +125,7 @@ A few tooling and other checks needed for your Open-Source JavaScript Project:
       ]
     }
     ```
+    Then follow [CI configuration](https://semantic-release.gitbook.io/semantic-release/usage/ci-configuration)
 
 ## Contributors ✨
 
