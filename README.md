@@ -91,6 +91,16 @@ A few tooling and other checks needed for your Open-Source JavaScript Project:
             "*.scss": "stylelint --syntax=scss"
         }
         ```
+9. [All Contributors CLI](https://allcontributors.org/docs/en/cli/installation)
+    ```bash
+    npm i -D all-contributors-cli
+    ```
+    ```bash
+    npx all-contributors init
+    ```
+    ```bash
+    npx all-contributors add
+    ```
 
 ## Contributors ✨
 
