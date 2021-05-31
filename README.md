@@ -101,6 +101,30 @@ A few tooling and other checks needed for your Open-Source JavaScript Project:
     ```bash
     npx all-contributors add
     ```
+10. [Semantic Release]()
+    ```bash
+    npm install --save-dev semantic-release @semantic-release/changelog @semantic-release/git
+    ```
+    
+    Create .`releasers.json`:
+    ```json
+    {
+      "preset": "angular",
+      "plugins": [
+        "@semantic-release/commit-analyzer",
+        "@semantic-release/release-notes-generator",
+        "@semantic-release/changelog",
+        "@semantic-release/npm",
+        [
+          "@semantic-release/github",
+          {
+            "assets": ["dist/*.tgz"]
+          }
+        ],
+        "@semantic-release/git"
+      ]
+    }
+    ```
 
 ## Contributors ✨
 
