@@ -30,8 +30,8 @@ A few tooling and other checks needed for your Open-Source JavaScript Project:
     ```bash
     echo "module.exports = { extends: ['@commitlint/config-conventional'] };" > commitlint.config.js
     ```
+5. [Husky](https://typicode.github.io/husky/#/)
     ```bash
-    # Husky
     npm install husky --save-dev
     ```
     ```bash
@@ -40,7 +40,7 @@ A few tooling and other checks needed for your Open-Source JavaScript Project:
     ```bash
     npx husky add .husky/commit-msg 'npx --no-install commitlint --edit $1'
     ```
-5. [Lint Staged](https://github.com/okonet/lint-staged#readme)
+6. [Lint Staged](https://github.com/okonet/lint-staged#readme)
     ```bash
     npx mrm lint-staged
     ```
