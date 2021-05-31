@@ -64,7 +64,7 @@ A few tooling and other checks needed for your Open-Source JavaScript Project:
         npm install --save-dev stylelint stylelint-config-standard stylelint-prettier
         ```
         ```bash
-        echo "{\"extends\":\"stylelint-config-standard\",\"plugins\":[\"stylelint-prettier\"],\"rules\":{\"prettier/prettier\":true}}" > .stylelintrc.json
+        echo "{\"extends\":\"stylelint-config-standard}" > .stylelintrc.json
         ```
 
         Add scripts in `lint-staged` section in `package.json`:
@@ -72,15 +72,15 @@ A few tooling and other checks needed for your Open-Source JavaScript Project:
         "lint-staged": {
             "*.ts": "eslint --cache --fix",
             "*.{ts,js,css,md,json}": "prettier --write",
-            "*.css": "stylelint",
+            "*.css": "stylelint --fix",
         }
         ```
     - SASS
         ```bash
-        npm install --save-dev stylelint stylelint-config-sass-guidelines stylelint-prettier
+        npm install --save-dev stylelint stylelint-config-sass-guidelines
         ```
         ```bash
-        echo "{\"extends\":\"stylelint-config-sass-guidelines\",\"plugins\":[\"stylelint-prettier\"],\"rules\":{\"prettier/prettier\":true}}" > .stylelintrc.json
+        echo "{\"extends\":\"stylelint-config-sass-guidelines\"}" > .stylelintrc.json
         ```
 
         Add scripts in `lint-staged` section in `package.json`:
@@ -88,7 +88,7 @@ A few tooling and other checks needed for your Open-Source JavaScript Project:
         "lint-staged": {
             "*.ts": "eslint --cache --fix",
             "*.{ts,js,css,md,json}": "prettier --write",
-            "*.scss": "stylelint --syntax=scss"
+            "*.scss": "stylelint --syntax=scss --fix"
         }
         ```
 9. [All Contributors CLI](https://allcontributors.org/docs/en/cli/installation)
